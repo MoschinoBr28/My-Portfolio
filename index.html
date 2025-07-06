@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fransesco Estrada Santos</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="PtLogo.png">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="PtLogoSN.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Rubik', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       font-size: 22px;
     }
   </style>
@@ -17,11 +19,27 @@
 <body>
     
     <div class="stickynav">
+</body>
+</html>
+<script>
+let lastScrollY = window.scrollY;
+const stickynav = document.querySelector('.stickynav');
+window.addEventListener('scroll', function() {
+  if (window.scrollY > lastScrollY) {
+    // Scrolling down
+    stickynav.classList.add('hidden-nav');
+  } else {
+    // Scrolling up
+    stickynav.classList.remove('hidden-nav');
+  }
+  lastScrollY = window.scrollY;
+});
+</script>
         <div class="logo">
             <img src="PtLogoSN.png" alt="Logo" style="width: 60px; height: 60px;">
         </div>
         <div class="name">
-            FRANSESCO ESTRADA SANTOS
+            MY PORTFOLIO
         </div>
         <nav>
             <ul>
@@ -33,21 +51,71 @@
         </nav>
     </div>
 
-<div class="container1">
-    <section class="MainImage">
-        <img src="Rogu.png" alt="Main Image" style="width: 15%; height: auto;">
-    </section>
-    <section class="welcome">
-        <h2>──⋆⋅☆⋅⋆Welcome to My Portfolio!⋆⋅☆⋅⋆──</h2>
-        </section>
-    </section>
+<div class="welcome-container">
+    <div class="roguimg">
+        <img src="Rogu.png" alt="Rogu" width="200" height="auto">
+    </div>
+    <div class="nametitle">
+        FRANSESCO<br>ESTRADA<br>SANTOS
+    <div class="subtitle">
+        High School Junior | Aspiring Veterinarian | Looking to Grow
+    </div>
+    </div>
+  
 </div>
 
 
+<div class="navigation-container">
+    <div class="aboutimg">
+       <a href="#AboutMe">
+    <img src="AboutMeBttn.png" alt="About Me" width="300" height="auto">
+        </a>
+    </div>
+
+    <div class="projectsimg">
+       <a href="#projects">
+    <img src="ProjectsBttn.png" alt="Projects" width="300" height="auto">
+        </a>
+    </div>
+
+    <div class="personalimg">
+       <a href="#personal">
+    <img src="PersonalBttn.png" alt="Personal" width="300" height="auto">
+        </a>
+    </div>
+
+    <div class="contactimg">
+       <a href="#contact">
+    <img src="ContactBttn.png" alt="Contact" width="300" height="auto">
+        </a>
+    </div>
 
 
+</div>
+
+<nav class="endbar">
+
+<div class="endbar-content">
+    <a href="mailto:estradafransesco@gmail.com" target="_blank">
+        <img src="Email.webp" alt="Email Icon" style="width:auto; height:45px; vertical-align:middle;">
+    </a>
+
+    <a href="https://www.instagram.com/alexeszcy?igsh=bTlyeXVyZG90Zmtm&utm_source=qr" target="_blank">
+        <img src="Instagram.png" alt="Instagram Icon" style="width:auto; height:45px; vertical-align:middle;">
+    </a>
+
+    <a href="https://github.com/MoschinoBr28" target="_blank">
+        <img src="GitHub.png" alt="GitHub Icon" style="width:auto; height:45px; vertical-align:middle;">
+    </a>
+
+    <a href="https://www.linkedin.com/in/fransesco-estrada-santos-81564627b/" target="_blank">
+        <img src="LinkedIn.webp" alt="LinkedIn Icon" style="width:auto; height:45px; vertical-align:middle;">
+    </a>
 
 
+</div>
+
+</nav>
 
 </body>
 </html>
